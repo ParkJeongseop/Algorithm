@@ -1,7 +1,6 @@
 while True:
-    str = input()
-    if len(str)>2:
-        a, b = map(int, str.split())
+    try:
+        a, b = map(int, input().split())
         print(a+b)
-    else:
+    except:
         break
